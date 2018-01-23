@@ -1,4 +1,74 @@
 /* CUSTOM STYLES */
 /* 1. Typography */
+@font-face {
+  font-family: 'karbonregular';
+  src: url("fonts/karbon-regular-webfont.woff2") format("woff2"), url("fonts/karbon-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'karbonmedium';
+  src: url("fonts/karbon-medium-webfont.woff2") format("woff2"), url("fonts/karbon-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'karbonsemibold';
+  src: url("fonts/karbon-semibold-webfont.woff2") format("woff2"), url("fonts/karbon-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'karbonbold';
+  src: url("fonts/karbon-bold-webfont.woff2") format("woff2"), url("fonts/karbon-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'karbonlight';
+  src: url("fonts/karbon-light-webfont.woff2") format("woff2"), url("fonts/karbon-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: "karbonregular", Tahoma, sans-serif;
+	text-shadow: none;
+}
+
+h1 {
+	font-family: "karbonlight", Tahoma, sans-serif;
+	/*font-size: 72px;*/
+	line-height: 1;
+}
+
+h3 {
+	font-family: 'karbonsemibold', Tahoma, sans-serif;
+	/*font-size: 32px;*/
+}
+
+body {
+	font-family: "karbonregular", Helvetica, Arial, sans-serif;	
+	/*font-size: 16px;*/
+	/*line-height: 1.6;*/
+}
+
+p, ul, ol, li {
+	font-family: "karbonlight", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	/*font-size: 18px;*/
+}
+
+strong, b {
+	font-weight: normal;
+	font-family: "karbonsemibold", Helvetica, Arial, sans-serif;
+}
 
 
+/* 2. Sections */
+section {
+	border-top: 1px solid grey;
+	padding: 1em 0;
+	background: #efefef;
+}
