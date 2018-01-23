@@ -56,6 +56,7 @@
 	}
 	h1 span,
 	h2 span,
+	h3 span,
 	h4 span {
 		font-family: 'karbonsemibold', Tahoma, sans-serif;		
 	}
@@ -105,8 +106,7 @@
 
 	strong, b {
 		font-weight: normal;
-		font-family: "karbonregular", Helvetica, Arial, sans-serif;
-		color: #222;
+		font-family: "karbonsemibold", Helvetica, Arial, sans-serif;
 	}
 
 
@@ -134,4 +134,40 @@ section {
 
 /* 3.  F o r m s */
 
-/* 4.  B u t t o n s 
+/* 4.  B u t t o n s */
+
+/* 5. Utilities */
+.hidden {
+	display: none;
+}
+
+.g-custom-primary {
+  color: #a6d100 !important; }
+
+.g-bg-custom-primary {
+  background-color: #a6d100 !important; }
+
+.g-brd-custom-primary {
+  border-color: #a6d100 !important;
+}
+
+.g-custom-primary-v2 {
+  color: #95CE3F !important; }
+
+.g-bg-custom-primary-v2 {
+  background-color: #95CE3F !important; }
+
+.g-brd-custom-primary-v2 {
+  border-color: #95CE3F !important;
+}
+
+
+.g-custom-secondary {
+  color: #00B9AE !important; }
+
+.g-bg-custom-secondary {
+  background-color: #00B9AE !important; }
+
+.g-brd-custom-secondary {
+  border-color: #00B9AE !important;
+}
