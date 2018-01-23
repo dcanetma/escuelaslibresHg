@@ -44,6 +44,11 @@
 		font-family: "karbonlight", Tahoma, sans-serif;
 		/*font-size: 72px;*/
 		line-height: 1;
+		text-transform: uppercase;
+		color: #95CE3F;
+	}
+	h1 span {
+		font-family: 'karbonsemibold', Tahoma, sans-serif;		
 	}
 
 	h3 {
@@ -55,14 +60,18 @@
 
 	body {
 		font-family: "karbonregular", Helvetica, Arial, sans-serif;	
-		/*font-size: 16px;*/
-		/*line-height: 1.6;*/
+		font-size: 18px;
+		line-height: 1.5;
+	  -webkit-text-size-adjust: 100%;
+	  -ms-text-size-adjust: 100%;
+	  -ms-overflow-style: scrollbar;
+	  -webkit-tap-highlight-color: transparent;
 	}
 
 	p, ul, ol, li {
-		font-family: "karbonlight", Helvetica, Arial, sans-serif;
-		font-weight: 200;
-		/*font-size: 18px;*/
+		font-weight: normal;
+		font-family: "karbonregular", Helvetica, Arial, sans-serif;
+		font-size: 18px;
 	}
 
 	strong, b {
@@ -93,7 +102,6 @@ a.navbar-brand-last img {
 section {
 	border-top: 1px solid grey;
 	padding: 1em 0;
-	background: #efefef;
 }
 
 /* 3.  F o r m s */
