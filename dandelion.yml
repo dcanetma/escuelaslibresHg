@@ -1,0 +1,17 @@
+# Required
+scheme: ftp
+host: "www.escuelaslibresdemercurio.com.dedi302.your-server.de"
+port: "21"
+username: "escuex"
+password: "bUCtK00j2FD5usXb"
+path: "public_html"
+exclude:
+    - .DS_Store
+    - .gitignore
+    - dandelion.yml
+    - README.md
+    - .sass-cache
+    - sandbox
+    - backup
+
+revision_file: .revision
