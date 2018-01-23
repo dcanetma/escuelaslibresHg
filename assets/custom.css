@@ -42,18 +42,37 @@
 
 	h1 {
 		font-family: "karbonlight", Tahoma, sans-serif;
-		/*font-size: 72px;*/
+		font-size: 72px;
 		line-height: 1;
 		text-transform: uppercase;
 		color: #95CE3F;
 	}
-	h1 span {
+	h2 {
+		font-family: "karbonlight", Tahoma, sans-serif;
+		font-size: 42px;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #00B9AE;		
+	}
+	h1 span,
+	h2 span,
+	h4 span {
 		font-family: 'karbonsemibold', Tahoma, sans-serif;		
 	}
 
 	h3 {
 		font-family: 'karbonsemibold', Tahoma, sans-serif;
+		color: #444;
+		font-size: 18px;
 		/*font-size: 32px;*/
+	}
+
+	h4 {
+		font-family: "karbonsemibold", Tahoma, sans-serif;
+		font-size: 30px;
+		line-height: 1;
+		text-transform: uppercase;		
+		color: #777;
 	}
 
 /* 1.1. Paragraph & list styles */
@@ -72,6 +91,13 @@
 		font-weight: normal;
 		font-family: "karbonregular", Helvetica, Arial, sans-serif;
 		font-size: 18px;
+		color: #666;
+	}
+
+	p.lead, 
+	p.lead strong {
+		font-size: 22px;
+		color: #00B9AE;
 	}
 
 	strong, b {
@@ -100,8 +126,6 @@ a.navbar-brand-last img {
 
 /* 2.3. Sections */
 section {
-	border-top: 1px solid grey;
-	padding: 1em 0;
 }
 
 /* 3.  F o r m s */
