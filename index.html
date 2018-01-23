@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">	
-	<head></head>
+	<head>
 		<!-- H E A D -->
 		<!-- H0. Required Meta tags always come first -->
 		<meta charset="utf-8">
@@ -37,7 +37,7 @@
 
 		<!-- H4. @todo: Scripts -->
 		<!-- @todo: google analytics -->
-
+	</head>
 	<body>
 		<main>
 			<!-- C A B E C E R A -->
@@ -71,32 +71,35 @@
 
 		<!-- C L O S U R E -->
 
+		<!-- Custom Scripts -->
+	  <script src="assets/custom.js"></script>
+
 		<!-- UE Cookie Consent scripts -->
-		<link rel="stylesheet" type="text/css" href="assets/cookieconsent2/cookieconsent.min.css" />
-		<script src="assets/cookieconsent2/cookieconsent.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/vendor/cookieconsent2/cookieconsent.min.css" />
+		<script src="assets/vendor/cookieconsent2/cookieconsent.min.js"></script>
 		<script>
 			window.addEventListener("load", function(){
 			window.cookieconsent.initialise({
 			  "palette": {
 			    "popup": {
-			      "background": "#edeff5",
-			      "text": "#838391"
+			      "background": "#efefef",
+			      "text": "#404040"
 			    },
 			    "button": {
-			      "background": "#4b81e8"
+			      "background": "#8ec760",
+			      "text": "#ffffff"
 			    }
 			  },
+			  "theme": "classic",
+			  "position": "bottom-right",
 			  "content": {
-			    "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso",
+			    "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso.",
 			    "dismiss": "De acuerdo",
 			    "link": "Saber más",
 			    "href": "http://www.escuelaslibresdemercurio.com/privacidad"
 			  }
 			})});
 		</script>
-
-		<!-- Custom Scripts -->
-	  <script src="assets/custom.js"></script>
 
 	</body>
 </html>
