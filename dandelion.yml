@@ -7,10 +7,11 @@ password: "bUCtK00j2FD5usXb"
 path: "public_html"
 exclude:
     - .DS_Store
+    - .sass-cache
     - .gitignore
+    - .editorconfig
     - dandelion.yml
     - README.md
-    - .sass-cache
     - sandbox
     - backup
 
