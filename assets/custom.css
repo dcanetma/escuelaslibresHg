@@ -74,6 +74,18 @@
 /* 2.  S e c t i o n s */
 
 /* 2.1. Header */
+a.navbar-brand {}
+a.navbar-brand img {}
+
+a.navbar-brand-first {}
+a.navbar-brand-first img {
+	width: 180px;
+}
+
+a.navbar-brand-last {}
+a.navbar-brand-last img {
+	width: 220px;
+}
 
 /* 2.2. Footer */
 
