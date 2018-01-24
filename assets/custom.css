@@ -138,21 +138,37 @@ a.navbar-brand-last img {
 }
 
 .footer-v3 .credits img {
-    max-width: 83px;
-    margin: 40px 0 10px 1em;
+    max-width: 100px;
+    margin: 20px 20px 40px 0;
 }
 
 .footer #logo-issop img {
     max-width: 60px;
 }
 
+.footer #logo-minamata img {
+    max-width: 160px;
+}
+
+
 .footer-v3 h2 {
-	font-family: 'karbonsemibold', Helvetica, Arial, sans-serif;
+	font-family: 'karbonbold', Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	color: #333;
+	color: #111;
 	line-height: 1.5;
 	margin-bottom: 0em;
 	padding-top: 2em;
+}
+
+
+.footer-v3 h3 {
+	font-family: 'karbonsemibold', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 0em;
+	padding-top: 1em;
+	text-transform: none;
+	color: #777;
 }
 
 /* 2.3. Sections */
