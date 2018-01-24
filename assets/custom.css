@@ -180,12 +180,15 @@ section#minamata {
 }
 
 section#ecoproyectores {
-	background-image: url("images/education-bg-shortThrow.jpg");
-	background-position: 0 125%;
+
+/*	background-image: url("images/education-bg-shortThrow.jpg");
+	background-position: 0 130%;
 	background-size: 50%;
 	background-repeat: no-repeat;
 	padding-bottom: 10%;
+*/
 	background-color: #f4f5f9 !important;
+
 }
 
 /* 3.  F o r m s */
