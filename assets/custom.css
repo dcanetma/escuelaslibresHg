@@ -127,15 +127,58 @@ a.navbar-brand-last img {
 }
 
 /* 2.2. Footer */
+.footer-v3 .footer {
+	padding: 40px 0;
+	background: #f1eff0;
+	border-top: 5px solid #f1eff0;	
+}
+.footer-logo {
+  margin: 1em 0 10px;
+  max-width: 180px;
+}
+
+.footer-v3 .credits img {
+    max-width: 83px;
+    margin: 40px 0 10px 1em;
+}
+
+.footer #logo-issop img {
+    max-width: 60px;
+}
+
+.footer-v3 h2 {
+	font-family: 'karbonsemibold', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #333;
+	line-height: 1.5;
+	margin-bottom: 0em;
+	padding-top: 2em;
+}
 
 /* 2.3. Sections */
 section {
 }
 
+section#minamata {
+	background-color: #f4f5f9 !important;
+}
+
+section#ecoproyectores {
+	background-image: url("images/education-bg-shortThrow.jpg");
+	background-position: 0 125%;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	padding-bottom: 10%;
+	background-color: #f4f5f9 !important;
+}
+
 /* 3.  F o r m s */
 
 /* 4.  B u t t o n s */
-
+.btn {
+		font-weight: normal;
+		font-family: "karbonbold", Helvetica, Arial, sans-serif;
+}
 /* 5. Utilities */
 .hidden {
 	display: none;
@@ -171,3 +214,7 @@ section {
 .g-brd-custom-secondary {
   border-color: #00B9AE !important;
 }
+
+.g-left-minus-custom {
+  left: -20.57143rem; 
+	z-index: 1;}
