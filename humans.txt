@@ -12,6 +12,11 @@
 
     All the team at CASIO España.
 
+# IMAGE CREDITS
+
+- Photo by pan xiaozhen on Unsplash
+- Photo by Ashton Bingham on Unsplash
+
 # TECHNOLOGY COLOPHON 
 
     HTML5, CSS3, 

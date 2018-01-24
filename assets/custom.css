@@ -75,6 +75,7 @@
 		color: #777;
 	}
 
+
 /* 1.1. Paragraph & list styles */
 
 	body {
@@ -213,6 +214,11 @@ section#ecoproyectores {
   border-color: #a6d100 !important;
 }
 
+.g-text-shadow-custom-primary {
+	text-shadow: 0 1px 1px #a6d100
+}
+
+
 .g-custom-primary-v2 {
   color: #95CE3F !important; }
 
@@ -223,6 +229,9 @@ section#ecoproyectores {
   border-color: #95CE3F !important;
 }
 
+.g-text-shadow-custom-primary-v2 {
+	text-shadow: 0 1px 1px #95CE3F
+}
 
 .g-custom-secondary {
   color: #00B9AE !important; }
@@ -234,6 +243,17 @@ section#ecoproyectores {
   border-color: #00B9AE !important;
 }
 
+.g-text-shadow-custom-secondary {
+	text-shadow: 0 1px 1px #00B9AE
+}
+
+.g-text-shadow-custom-dark {
+	text-shadow: 0 1px 1px #181818
+}
+
 .g-left-minus-custom {
   left: -20.57143rem; 
 	z-index: 1;}
+
+.g-card-block {
+}
