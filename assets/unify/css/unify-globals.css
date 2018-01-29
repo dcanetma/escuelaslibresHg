@@ -6064,6 +6064,8 @@
 @media (min-width: 992px) {
   .g-height-100vh--lg {
     height: 100vh !important; }
+  .g-min-height-80vh--lg {
+    min-height: 80vh; }
   .g-min-height-90vh--lg {
     min-height: 90vh; }
   .g-min-height-100vh--lg {
