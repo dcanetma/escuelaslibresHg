@@ -3094,10 +3094,22 @@
   font-size: 12.85714rem !important; }
 
 @media (min-width: 576px) {
+  .g-font-size-12--sm {
+    font-size: 0.85714rem !important; }
+  .g-font-size-16--sm {
+    font-size: 1.14286rem !important; }
+  .g-font-size-18--sm {
+    font-size: 1.28571rem !important; }
   .g-font-size-20--sm {
     font-size: 1.42857rem !important; }
   .g-font-size-25--sm {
     font-size: 1.78571rem !important; }
+  .g-font-size-30--sm {
+    font-size: 2.14286rem !important; }
+  .g-font-size-32--sm {
+    font-size: 2.28571rem !important; }
+  .g-font-size-35--sm {
+    font-size: 2.5rem !important; }
   .g-font-size-40--sm {
     font-size: 2.85714rem !important; }
   .g-font-size-50--sm {
@@ -3116,6 +3128,8 @@
     font-size: 1.28571rem !important; }
   .g-font-size-20--md {
     font-size: 1.42857rem !important; }
+  .g-font-size-22--md {
+    font-size: 1.57143rem !important; }
   .g-font-size-24--md {
     font-size: 1.71429rem !important; }
   .g-font-size-25--md {
@@ -6007,7 +6021,25 @@
 .g-height-auto {
   height: auto; }
 
+@media (min-width: 320px) {
+  .g-min-height-70vh--xs {
+    min-height: 70vh; }
+  .g-min-height-90vh--xs {
+    min-height: 90vh; }
+  .g-min-height-100vh--xs {
+    min-height: 100vh; }
+  .g-height-100vh--xs {
+    height: 100vh !important; }
+  .g-height-auto--xs {
+    height: auto; }
+  .g-height-100x--xs {
+    height: 100%; } }
+
 @media (min-width: 576px) {
+  .g-min-height-90vh--sm {
+    min-height: 90vh; }
+  .g-min-height-100vh--sm {
+    min-height: 100vh; }
   .g-height-100vh--sm {
     height: 100vh !important; }
   .g-height-auto--sm {
@@ -6016,6 +6048,14 @@
     height: 100%; } }
 
 @media (min-width: 768px) {
+  .g-min-height-50vh--md {
+    min-height: 50vh; }
+  .g-min-height-60vh--md {
+    min-height: 60vh; }
+  .g-min-height-70vh--md {
+    min-height: 70vh; }
+  .g-min-height-90vh--md {
+    min-height: 90vh; }
   .g-height-auto--md {
     height: auto; }
   .g-min-height-100vh--md {

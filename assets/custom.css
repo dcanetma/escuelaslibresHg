@@ -42,7 +42,7 @@
 
 	h1 {
 		font-family: "karbonlight", Tahoma, sans-serif;
-		font-size: 64px;
+		font-size: 32px;
 		line-height: 1;
 		text-transform: uppercase;
 		color: #95CE3F;
@@ -64,7 +64,7 @@
 	h3 {
 		font-family: 'karbonsemibold', Tahoma, sans-serif;
 		color: #333;
-		font-size: 24px;
+		font-size: 16px;
 	}
 
 	h4 {
@@ -96,7 +96,7 @@
 	}
 
 	p.lead {
-		font-size: 22px;
+		font-size: 18px;
 		line-height: 1.275;
 		font-family: "karbonregular", Helvetica, Arial, sans-serif;
 		color: #00B9AE;
@@ -304,11 +304,63 @@ Bootstrap 4 breakpoints
 Extra small devices (portrait phones, less than 544px) 
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
- 
+@media (min-width: 320px) {   
+	a.navbar-brand-first img {
+		width: 140px;
+	}
+
+	a.navbar-brand-first {
+		width: 50%;
+		margin-right: 0;
+	}
+	a.navbar-brand-first img {
+		float: left;
+	}
+	a.navbar-brand-last {
+		width: 50%;
+		margin-right: 0;
+	}
+	a.navbar-brand-last img {
+		width: 160px;
+		float: right;
+	}
+	.footer-logo {
+		max-width: 140px;		
+	}
+	.footer #logo-issop img {
+		max-width: 60px;
+	}
+	.footer #logo-minamata img {
+	    max-width: 120px;
+	}
+	.footer-v3 .credits img {
+    max-width: 60px;
+  }
+}
  
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
- 
+ 	a.navbar-brand-first img {
+		width: 140px;
+	}
+
+	a.navbar-brand-first {
+		width: 50%;
+		margin-right: 0;
+	}
+	a.navbar-brand-first img {
+		float: left;
+	}
+	a.navbar-brand-last {
+		width: 50%;
+		margin-right: 0;
+	}
+	a.navbar-brand-last img {
+		width: 160px;
+		float: right;
+	}
+
+
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -319,23 +371,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	a.navbar-brand img {
 	}
 
-	a.navbar-brand-first {
-		width: 50%;
-		margin-right: 0;
-	}
 	a.navbar-brand-first img {
 		float: left;
-		/*width: 180px;*/
-	}
-
-	a.navbar-brand-last {
-		width: 50%;
-		margin-right: 0;
+		width: 180px;
 	}
 	a.navbar-brand-last img {
-		/*width: 220px;*/
-		float: right;
+		width: 220px;
 	}
+
  
 }
  
