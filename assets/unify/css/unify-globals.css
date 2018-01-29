@@ -3170,6 +3170,8 @@
     font-size: 1.14286rem !important; }
   .g-font-size-18--lg {
     font-size: 1.28571rem !important; }
+  .g-font-size-22--lg {
+    font-size: 1.57142rem !important; }
   .g-font-size-26--lg {
     font-size: 1.85714rem !important; }
   .g-font-size-32--lg {
@@ -3180,6 +3182,8 @@
     font-size: 2.57143rem !important; }
   .g-font-size-60--lg {
     font-size: 4.28571rem !important; }
+  .g-font-size-65--lg {
+    font-size: 4.64285rem !important; }
   .g-font-size-75--lg {
     font-size: 5.35714rem !important; }
   .g-font-size-76--lg {
@@ -6020,6 +6024,10 @@
 @media (min-width: 992px) {
   .g-height-100vh--lg {
     height: 100vh !important; }
+  .g-min-height-90vh--lg {
+    min-height: 90vh; }
+  .g-min-height-100vh--lg {
+    min-height: 100vh; }
   .g-height-auto--lg {
     height: auto; } }
 
@@ -8365,11 +8373,15 @@
   .g-mr-35--md {
     margin-right: 2.5rem !important; }
   .g-mr-40--md {
-    margin-right: 2.85714rem !important; }
+    margin-right: 4.28572rem !important; }
   .g-mr-45--md {
     margin-right: 3.21429rem !important; }
   .g-mr-50--md {
-    margin-right: 3.57143rem !important; } }
+    margin-right: 3.57143rem !important; }
+  .g-mr-60--md {
+    margin-right: 3.57143rem !important; }
+  .g-mr-80--md {
+    margin-right: 8.57144rem !important; }  }
 
 /* Margin Spaces (lg)
 ------------------------------------*/
