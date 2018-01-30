@@ -365,6 +365,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
+	.footer-logo {
+	  margin: 1em 0 10px;
+	  max-width: 180px;
+	}
+
+	.footer-v3 .credits img {
+	    max-width: 100px;
+	    margin: 20px 25px 40px 0;
+	}
+
+	.footer #logo-issop img {
+	    max-width: 80px;
+	}
+
+	.footer #logo-minamata img {
+	    max-width: 160px;
+	}
+
 	a.navbar-brand {
 
 	}
