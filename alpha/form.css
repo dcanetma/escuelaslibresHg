@@ -1,0 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+fieldset {
+	border-radius: 1.5rem;
+	border: 3px solid #ccc;
+}
+label {
+	font-size: 80%;
+	text-transform: uppercase;
+}
+
+label.custom-control-label,
+label.form-check-label {
+	text-transform: none;
+	font-size: 1rem;
+}
+
+
+.valid-feedback,
+.invalid-feedback,
+input[type="text"],
+input[type="email"] {
+  transition: all 0.3s ease-out;
+}
+
+.btn {
+	border-radius: 3rem;
+}
+
+.form-control,
+.custom-select {
+	border-radius: 0;
+	border: none;
+  border-bottom: 1px solid #ced4da;
+  text-align: center;
+  color: #495057;
+}
+
+.custom-select {
+	background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ced4da' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size: 8px 10px;
+}
+
+.custom-select:focus,
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f00;
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid green;
+}
+
+.custom-control-inline.custom-radio {
+	margin-right: 3rem;
+}
+
+.custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus {
+	/*box-shadow: 0 0 0 .2rem rgba(40,167,69,.25);*/
+	box-shadow: none;
+	outline: 0;
+}
+
+.custom-select.is-invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .was-validated .form-control:invalid:focus {
+  border-color: #dc3545;
+  /*box-shadow: 0 0 0 .2rem rgba(220,53,69,.25);*/
+	box-shadow: none;
+	outline: 0;
+}
