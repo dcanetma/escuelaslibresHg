@@ -13,6 +13,24 @@
 
 		<link rel="stylesheet" type="text/css" href="form.css">
 
+		<!-- Facebook Pixel Code -->
+<!-- 		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '1792433704392428');
+		  fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=1792433704392428&ev=PageView&noscript=1"
+		/></noscript> -->
+		<!-- End Facebook Pixel Code -->
+
 	</head>
 	<body>
 		<meta name="robots" content="noindex, nofollow">
@@ -134,7 +152,7 @@
 
 						<div class="row  text-center">
 							<div class="col-12">
-								<button class="btn btn-primary px-5 py-3" type="submit">Ínscribe tu escuela ahora</button>
+								<button id="button-enviar" class="btn btn-primary px-5 py-3" type="submit">Ínscribe tu escuela ahora</button>
 							</div>
 
 							<!-- <input type="submit" value="Suscribirme a la lista"> -->
@@ -153,7 +171,6 @@
 		</main>
 
 		<!-- <div id="form-acm_6607"></div> -->
-
 		<!-- Form Acumbamail -->
 		<!-- <form action="https://acumbamail.com/newform/subscribe/e1fcQ4VIblfO9s3LEdz3WFhmd/6607/" method="post" class="yourFormCustomContainer">
 		   <div class="yourFormCustomStyle">
@@ -165,19 +182,22 @@
 		</form> -->
 		<!-- End Form Acumbamail -->
 
-
-
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
 		<!-- Acumbamail thing -->
 		<script type="text/javascript" src="https://acumbamail.com/newform/dynamic/js/e1fcQ4VIblfO9s3LEdz3WFhmd/6607/"></script>
 
 		<script type="text/javascript" src="form.js"></script>
+
+		<script type="text/javascript">
+			$( '#button-enviar' ).click(function() {
+			  fbq('track', 'CompleteRegistration');
+			});
+		</script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
