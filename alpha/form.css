@@ -1,8 +1,20 @@
+/**
+ *
+ * G E N E R A L
+ *
+ */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 } 
+
+/**
+ *
+ * F O R M 
+ *
+ */
 
 fieldset {
 	border-radius: 1.5rem;
@@ -18,7 +30,6 @@ label.form-check-label {
 	text-transform: none;
 	font-size: 1rem;
 }
-
 
 .valid-feedback,
 .invalid-feedback,
