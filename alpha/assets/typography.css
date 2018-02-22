@@ -45,6 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+	font-family: 'karbonsemibold', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: normal;
+}
+
 .lead {
 	font-family: 'karbonlight', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	font-size: 1.375rem;
@@ -53,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 .lead strong {
 	font-family: 'karbonregular', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";	
 	font-weight: normal;
-
 }
 
 strong, b {
