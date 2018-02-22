@@ -14,7 +14,10 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="form.css">
+		<link rel="stylesheet" type="text/css" href="assets/typography.css">
+		<link rel="stylesheet" type="text/css" href="assets/header.css">
+		<link rel="stylesheet" type="text/css" href="assets/form.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles.css">
 
 		<!-- Facebook Pixel Code -->
 		<!-- 
@@ -39,40 +42,208 @@
 	<body>
 		<main>
 			<!-- header -->
-			<header>
-					<!-- logo CASIO División Educativa -->
-					<!-- logo Lampfree technology -->
-					<small>Header amb logos</small>
+			<header class="container-fluid bg-light">
+					<nav class="row justify-content-between no-gutters py-4">
+				    <div class="col-4 text-left">
+							<!-- logo CASIO División Educativa -->
+					    <a href="/" class="logo logo-first align-middle ">
+	              <img src="./assets/images/logo-casio-division-educativa.png" alt="División Educativa de CASIO" title="División Educativa de CASIO">
+					    </a>
+				    </div>
+				    <div class="col-4 text-right">
+							<!-- logo Lampfree -->
+					    <a href="/" class="logo logo-last align-middle ">
+	              <img src="./assets/images/logo-casio-lampfree-no-text.svg" alt="CASIO Tecnología sin Lámpara" title="CASIO Tecnología sin Lámpara">
+					    </a>
+				    </div>
+					</nav>
 			</header>
 
-			<!-- Hero section -->
-			<section id="presentacion">
-				<h1>…
-					<span>…</span>
-				</h1>
-				<p>…</p>
-				<a href="#" class="btn">…</a>			
+			<!-- #presentacion -->
+      <section id="presentacion" class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-8">
+							<h1 class="">¿Eres un centro educativo?</h1>
+							<h1 class="text-uppercase">
+								¡Apúntate al programa <span>Escuelas Libres de Mercurio</span>!
+							</h1>
+							<p class="lead">
+								El programa <strong>Escuelas Libres de Mercurio</strong> ayuda al centro educativo a transmitir valores de <strong>sostenibilidad y ecología</strong> desde la escuela al alumnado y de éste a sus familias, contribuyendo a la educación de la sociedad en su conjunto.
+							</p>
+							<p class="lead">
+								<strong>¡Eliminemos el mercurio de los centros educativos!</strong>
+							</p>
+							<p class="lead">
+								<a class="btn btn-primary btn-lg" href="#" role="button" title="Eliminemos el mercurio de los centros educativos">Apúntate al programa</a>
+							</p>							
+						</div>						
+						<div class="col-4">
+							<img src="assets/images/leaf.png" alt="CASIO green marker" title="CASIO green marker"/>
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<!-- Programa -->
-			<section id="beneficios">
-				<h2>…</h2>
-				<p>…</p>
-				<ul>
-					<li>…</li>
-					<li>…</li>
-					<li>…</li>
-					<li>…</li>
-					<li>…</li>
-					<li>…</li>
-				</ul>
+			<!-- #beneficios -->
+			<section id="beneficios" class="bg-light">
+				<div class="container py-5">
+					<div class="row pb-5 text-center">
+						<div class="col-12 ">
+							<h2 class="display-5">Beneficios que obtiene el centro educativo</h2>
+							<p class="lead">
+								El programa Escuelas libres de mercurio ayuda al centro educativo
+							</p>
+						</div>
+					</div>
+					<div class="row pb-5 align-items-start">
+						<div class="col-xs-12 col-md-6">
+							<p>Transmitir <strong>valores de sostenibilidad y ecología</strong> desde la escuela a lxs alunmxs y de estxs a sus familias contribuyendo a la educación de la sociedad en su conjunto.</p>
+							<p><strong>Material audiovisual y guía práctica</strong> para realizar un taller sobre sostenibilidad y anti-obsolescencia programada.</p>
+							<p><strong>Unidad pedagógica multimedia</strong> sobre el mercurio creado por Ambientech (recomendado por el Ministerio de Educación).</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<p><strong>Certificación oficial</strong> "Escuela libre de mercurio" (una vez el centro educativo llegue al 80% de proyectores libres de mercurio; avalado por el pueblo de Minamata).</p>
+							<p><strong>Distintivo digital "Educación por la sostenibilidad"</strong>, avalado por Escuelas verdes (tras realizar el Taller sostenible).</p>
+							<p><strong>Reconocimiento y difusión</strong> a través de las entidades que participan en el Programa Escuelas Libres de Mercurio.</p>
+						</div>
+					</div>
+				</div>				
 			</section>
 
 			<!-- Formulario -->
-			<section id="registro">
-				<h2>…</h2>
-				<p>…</p>
-				<form></form>
+			<section id="registro" >
+				<div class="container py-5">
+					<!-- Form Acumbamail: action points to '' -->
+					<form id="formulario" action="https://acumbamail.com/newform/subscribe/e1fcQ4VIblfO9s3LEdz3WFhmd/7663/" method="post" class="needs-validation" novalidate>
+						<div class="row text-center px-5">
+							<div class="col-12 ">
+							  	<h1>¿Cómo me apunto?</h1>
+							  	<p class="lead">El primer paso para participar en el programa consiste en rellenar y enviar el siguiente formulario.</p>
+							</div>
+						</div>
+						<fieldset class="p-5">
+							<div class="row  text-center mb-4">
+							  <div class="col-xs-12 col-md-6 form-group mb-4">
+									<label class="form-control-label" for="char_01" name="char_01">Nombre</label>
+							    <input type="text" class="form-control" id="char_01" name="char_01" placeholder="¿Cuál es su nombre?" required>
+							    <div class="valid-feedback">¡Parece correcto!</div>
+							    <div class="invalid-feedback">Debe indicarnos su nombre para continuar</div>
+							  </div>
+							  <div class="col-xs-12 col-md-6 form-group mb-4">
+									<label class="form-control-label" for="email_1" name="email_1">E-mail</label>
+							    <input type="email" class="form-control" id="email_1" name="email_1"  placeholder="Su dirección de correo electrónico" required>
+							    <div class="valid-feedback">¡Correcto, siguiente!</div>
+							    <div class="invalid-feedback">La dirección no parece correcta</div>
+							  </div>
+							</div>
+
+							<div class="row text-center">
+							  <div class="col-xs-12 col-md-6 form-group mb-4">
+									<label class="form-control-label" for="char_02">Nombre del centro educativo</label>
+							    <input type="text" class="form-control" id="char_02" name="char_02" placeholder="Indique el nombre del centro" required>
+							    <div class="valid-feedback">¡Gracias!</div>
+							    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+							  </div>
+							  <div class="col-xs-12 col-md-6 form-group mb-4">
+									<label class="form-control-label" for="char_03">Teléfono</label>
+							    <input type="text" class="form-control" id="char_03" name="char_03"  placeholder="Déjenos un número de teléfono de contacto">
+							    <div class="valid-feedback">¡Gracias!</div>
+							    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+							  </div>						
+							</div>
+
+							<div class="row text-center">
+							  <div class="col-xs-12 col-md-6 form-group mb-4">
+									<label class="form-control-label" for="char_04">Población</label>
+							    <input type="text" class="form-control" id="char_04" name="char_04" placeholder="Nombre de la ciudad o población" required>
+							    <div class="valid-feedback">¡Gracias!</div>
+							    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+
+							  </div>
+							  <div class="col-xs-12 col-md-6 form-group mb-4">
+									<label class="form-control-label" for="char_05">Provincia</label>
+							    <input type="text" class="form-control" id="char_05" name="char_05" placeholder="Indique la provincia" >
+							    <div class="valid-feedback">Le agradecemos si indica la provincia.</div>
+							  </div>						
+								
+							</div>
+
+							<div class="row text-center">
+									<div class="col-xs-12 col-md-6 form-group mb-4">
+											<div class="row mb-3">
+												<div class="col">
+													<label class="form-control-label" for="char_06">Tipo de centro</label>									
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="custom-control custom-radio custom-control-inline">
+													  <input type="radio" id="customRadio1" name="char_06" class="custom-control-input" value="Público" required>
+													  <label class="custom-control-label" for="customRadio1">Público</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+													  <input type="radio" id="customRadio2" name="char_06" class="custom-control-input" value="Privado" required>
+													  <label class="custom-control-label" for="customRadio2">Privado</label>
+													</div>							
+													<div class="custom-control custom-radio custom-control-inline">
+													  <input type="radio" id="customRadio3" name="char_06" class="custom-control-input" value="Concertado" required>
+													  <label class="custom-control-label" for="customRadio3">Concertado</label>
+													</div>		
+
+												</div>
+											</div>							
+
+											</div>
+									<div class="col-xs-12 col-md-6 form-group mb-4">
+										<label class="form-control-label mb-3" for="inputSuccess7">Tipo de educación</label>
+										<select class="custom-select" id="combobox_1" name="combobox_1" required>
+										  <option value="">Indique la educación que se imparte</option>
+										  <option value="Primaria y/o secundaria">Primaria y/o secundaria</option>
+										  <option value="Universidad">Universidad</option>
+										  <option value="Idiomas">Idiomas</option>
+										  <option value="Otros">Otros</option>
+										</select>							
+								    <div class="valid-feedback">¡Gracias!</div>
+								    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+
+
+									</div>
+							</div>
+
+							<div class="row text-center mt-5 mb-4">
+							  <div class="col-12 form-group">
+							    <div class="form-check">
+							      <input class="form-check-input" type="checkbox" value="" id="legalCheck" required>
+							      <label class="form-check-label" for="legalCheck">
+							        <b>Aceptación de condiciones</b> lorem ipsum dolor sit amet, tralará olit.
+							      </label>
+							      <div class="invalid-feedback">
+							        Debe aceptar las condiciones legales para continuar.
+							      </div>
+							    </div>
+							  </div>
+							</div>
+
+							<div class="row  text-center">
+								<div class="col-12">
+									<button id="button-enviar" class="btn btn-primary px-5 py-3" type="submit">Ínscribe tu escuela ahora</button>
+								</div>
+
+								<!-- <input type="submit" value="Suscribirme a la lista"> -->
+
+							</div>
+		
+							<input name="char_07" value="ecolibremercurio201801" type="hidden">
+							<input type="hidden" name="ok_redirect" value="http://www.escuelaslibresdemercurio.com/hemos-recibido-su-solicitud-de-registro">
+						</fieldset>
+					</form>
+
+					
+				</div>
+
+
+
 			</section>
 
 			<!-- Convenio de Minamata -->
@@ -121,7 +292,7 @@
 		<!-- Acumbamail thing -->
 		<script type="text/javascript" src="https://acumbamail.com/newform/dynamic/js/e1fcQ4VIblfO9s3LEdz3WFhmd/6607/"></script>
 
-		<script type="text/javascript" src="form.js"></script>
+		<script type="text/javascript" src="assets/js/form.js"></script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
