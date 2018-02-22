@@ -1,6 +1,6 @@
 .logo img {
 	max-width: 180px;
-	display: inline-block;
+
 }
 .logo-first img {
 	max-width: 160px;
@@ -8,3 +8,6 @@
 
 
 
+.logo-footer-first {
+	max-width: 160px;
+}

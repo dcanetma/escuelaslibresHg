@@ -1,0 +1,38 @@
+
+/* 2.  General Layout   */
+body {
+	/* todo: add background image with the street map repeated vertically… */
+}
+
+section {
+	padding: 3rem 0;
+}
+
+.bg-white {
+	background-color: #fff !important;
+}
+.bg-green {
+	background-color: #00BAB2 !important;
+	color: #fff !important;
+}
+.bg-green a {
+	color: #fff;
+}
+
+
+.jumbotron {
+	background-color: transparent;
+}
+.jumbotron h1 {}
+.jumbotron h2 {}
+
+.logos-other li {
+	margin-right: 2rem;
+}
+.logos-other li img {
+	max-width: 120px;
+} 
+
+.logo-credits img {
+	max-height: 55px;
+}
