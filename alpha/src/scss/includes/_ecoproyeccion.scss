@@ -1,0 +1,44 @@
+#ecoproyeccion {
+	background: url('../images/bg-ciudad.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+
+  .card {
+  	border-radius: .75rem;
+  }
+
+  .card-img-top {
+  	max-width: 30%;
+  	min-width: 100px;
+  }
+
+
+	.card {
+	    position:relative;
+	}
+	.card:before, .card:after {
+	    content:"";
+	    position:absolute;
+	    z-index:-1;
+	    -webkit-box-shadow:0 0 15px rgba(200,212,200,1);
+	    -moz-box-shadow:0 0 15px rgba(200,212,200,1);
+	    box-shadow:0 0 15px rgba(200,212,200,1);
+	    top:0;
+	    bottom:0;
+	    left:0;
+	    right:0;
+	    -moz-border-radius:100px / 10px;
+	    border-radius:100px / 10px;
+	}
+	.card:after {
+	    right:10px;
+	    left:auto;
+	    -webkit-transform:skew(8deg) rotate(3deg);
+	       -moz-transform:skew(8deg) rotate(3deg);
+	        -ms-transform:skew(8deg) rotate(3deg);
+	         -o-transform:skew(8deg) rotate(3deg);
+	            transform:skew(8deg) rotate(3deg);
+	}
+
+}
