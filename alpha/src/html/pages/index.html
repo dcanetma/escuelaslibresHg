@@ -5,14 +5,14 @@ title: Bienvenida
 <!-- #presentacion -->
 <section id="presentacion" class="jumbotron jumbotron-first jumbotron-fluid">
 	<div class="container">
-		<div class="row">
-			<div class="col-8">
+		<div class="row justify-content-md-center">
+			<div class="col-8 col-md-8">
 				<h1 class="display-5">¿Eres un centro educativo?</h1>
-				<h2 class="display-3 text-uppercase mb-3">
+				<h2 class="display-4 text-uppercase mb-3">
 					¡Apúntate al programa <span>Escuelas Libres de Mercurio</span>!
 				</h2>
 				<p class="lead mr-md-5">
-					El programa <strong>Escuelas Libres de Mercurio</strong> ayuda al centro educativo a transmitir valores de <strong>sostenibilidad y ecología</strong> desde la escuela al alumnado y de éste a sus familias, contribuyendo a la educación de la sociedad en su conjunto.
+					Transmite desde tu centro educativo los valores de <strong>sostenibilidad y ecología</strong> al alumnado contribuyendo a la educación de la sociedad.
 				</p>
 				<p class="lead  mb-4">
 					<strong>¡Eliminemos el mercurio de los centros educativos!</strong>
@@ -21,15 +21,15 @@ title: Bienvenida
 					<a class="btn btn-primary btn-lg" href="#programa" role="button" title="Eliminemos el mercurio de los centros educativos">Apúntate al programa</a>
 				</p>							
 			</div>						
-			<div class="col-3">
-				<img src="assets/images/leaf.png" alt="CASIO green marker" title="CASIO green marker"/>
+			<div class="col-4 col-md-4 pl-5 pt-4 ">
+				<img src="{{ root }}images/hoja.png" class="img-fluid" alt="CASIO green marker" title="CASIO green marker"/>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- #beneficios -->
-<section id="programa" class="bg-light">
+<section id="programa" class="">
 	<div class="container py-5">
 		<div class="row pb-5 text-center">
 			<div class="col-12 ">
@@ -199,14 +199,14 @@ title: Bienvenida
 				<p>El Convenio de Minamata sobre el Mercurio <strong>entró en vigor en agosto de 2017</strong> y prohibe la producción, importación y exportación de productos que contengan mercurio tales como las lámparas fluorescentes o las pilas de botón.</p>
 				<p>CASIO ha invertido en la creación de nuevos proyectores sin mercurio para cumplir con el Convenio de Minamata. Los ecoproyectores CASIO son los pioneros en eliminar el mercurio y, por ello, tienen una serie de beneficios y certificaciones sostenibles como el <strong>sello ISSOP</strong> y el <strong>certificado TCO</strong>.</p>
 				<ul class="list-inline logos-other equal">
-				  <li class="list-inline-item"><img src="./assets/images/logo-tco.png" alt="TCO" title="TCO"></li>
-				  <li class="list-inline-item"><img src="./assets/images/logo-issop.png" alt="ISSOP" title="ISSOP"></li>
-				  <li class="list-inline-item"><img src="./assets/images/logo-minamata-esp.png" alt="Convención de Minamata logo" title="Convención de Minamata logo"></li>
+				  <li class="list-inline-item"><img src="{{ root }}images/old/logo-tco.png" alt="TCO" title="TCO"></li>
+				  <li class="list-inline-item"><img src="{{ root }}images/old/logo-issop.png" alt="ISSOP" title="ISSOP"></li>
+				  <li class="list-inline-item"><img src="{{ root }}images/old/logo-minamata-esp.png" alt="Convención de Minamata logo" title="Convención de Minamata logo"></li>
 				</ul>
 			</div>						
 			<div class="col-xs-12 col-md-6">
 				<a href="#">
-					<img class="img-thumbnail p-3" src="./assets/images/minamata-video-snapshot.jpg" alt="Reproducir vídeo sobre el Convenio de Minamata" title="Reproducir vídeo sobre el Convenio de Minamata">
+					<img class="img-thumbnail p-3" src="{{ root }}images/old/minamata-video-snapshot.jpg" alt="Reproducir vídeo sobre el Convenio de Minamata" title="Reproducir vídeo sobre el Convenio de Minamata">
 				</a>
 			</div>						
 		</div>
@@ -246,22 +246,22 @@ title: Bienvenida
 				<ul class="mt-4 list-inline">
 					<li class="list-inline-item mr-5">
 						<a href="https://www.ecoproyectorescasio.com/">
-							<img class="logo-footer-first" src="./assets/images/ecoproyectores-2017_7.svg">
+							<img class="logo-footer-first" src="{{ root }}images/old/ecoproyectores-2017_7.svg">
 						</a>									
 					</li>
 					<li class="list-inline-item mr-2">
 	          <a class="logo-credits" href="https://www.ecoproyectorescasio.com/actualidad/casio-ecoproyectores-issop-sostenible/" id="logo-issop">
-	           <img src="assets/images/logo-issop.png" alt="certificado ISSOP por fabricar productos sostenibles"> 
+	           <img src="{{ root }}images/old/logo-issop.png" alt="certificado ISSOP por fabricar productos sostenibles"> 
 	          </a>
 					</li>
 					<li class="list-inline-item mr-2">
             <a class="logo-credits" href="http://www.casio-projectors.eu/es/ambiente/" id="logo-minamata">
-	           <img src="assets/images/logo-minamata-esp.png" alt="Convenio de Minamata"> 
+	           <img src="{{ root }}images/old/logo-minamata-esp.png" alt="Convenio de Minamata"> 
 	          </a>
 					</li>
 					<li class="list-inline-item">
             <a class="logo-credits" href="https://www.ecoproyectorescasio.com/actualidad/ecoproyectores-casio-certificado-tco/" id="logo-tco">
-	           <img src="assets/images/logo-tco.png" alt="Certificado TCO, estándar internacional de sostenibilidad"> 
+	           <img src="{{ root }}images/old/logo-tco.png" alt="Certificado TCO, estándar internacional de sostenibilidad"> 
 	          </a>
 					</li>
 				</ul>

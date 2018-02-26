@@ -31,7 +31,7 @@ gulp.task('serve', ['sass'], function() {
     });
     gulp.watch(['src/scss/**/*.scss'], ['sass']);
     gulp.watch('src/js/*.js', ['js', browserSync.reload]);
-    gulp.watch(['src/html/data/*.yml','src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html', browserSync.reload]);
+    gulp.watch(['src/html/data/*.yml','src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html']);
 });
 
 // Move Fonts to src/fonts

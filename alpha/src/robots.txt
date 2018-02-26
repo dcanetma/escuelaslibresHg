@@ -1,0 +1,7 @@
+User-agent: * 
+Disallow: /alpha/
+Disallow: /newsletters/
+Disallow: /privacidad.html
+Disallow: /privacidad
+Disallow: /404.html
+Disallow: /404
