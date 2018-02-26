@@ -1,6 +1,20 @@
 .DS_Store
 Gemfile.lock
 
+
+# Alpha site
+alpha/.DS_Store
+alpha/bower_components
+alpha/node_modules
+alpha/npm-debug.log
+alpha/.sass-cache
+# Alpha site -- after deploy
+/node_modules
+/bower_components
+npm-debug.log
+.sass-cache
+
+
 # asset pipeline
 .bundle
 .sass-cache
