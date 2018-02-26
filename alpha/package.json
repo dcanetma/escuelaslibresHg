@@ -2,14 +2,21 @@
   "name": "escuelaslibresdemercurio-com-site",
   "homepage": "http://www.escuelaslibresdemercurio.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Front-end theming for Escuelas Libres de Mercurio site, using Bootstrap 4 theming workflow.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/casio/escuelaslibresdemercurio.com.git"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.11.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -17,5 +24,5 @@
     "gulp-sass": "^3.1.0"
   },
   "author": "Daniel Canet",
-  "license": "ISC"
+  "license": "MIT"
 }
