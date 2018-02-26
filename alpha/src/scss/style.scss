@@ -1,1 +1,9 @@
 // Main Sass File
+
+// custom Variables for Bootstrap v4.0.0
+@import "includes/variables";
+// Include custom Bootstrap v4.0.0 (https://getbootstrap.com)
+@import "includes/bootstrap";
+
+// Custom css
+@import "includes/custom";
