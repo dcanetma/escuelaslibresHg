@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Daniel Canet   -- Digital Production -- @dcanetma
+    Marc martí     -- Creative texts     -- @marcmarti
+    David Medina   -- Art Direction      -- @medinlu
+    Eloy Bernal    -- Project Director   --  
+
+# THANKS to
+
+    All the team at CASIO España.
+
+
+# TECHNOLOGY COLOPHON 
+
+    HTML5, CSS3, 
+    Sass, Gulp, Bootstrap4, …

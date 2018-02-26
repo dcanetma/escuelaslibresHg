@@ -21,10 +21,10 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "panini": "1.6.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "panini": "1.6.2"
   },
   "author": "Daniel Canet",
   "license": "MIT"

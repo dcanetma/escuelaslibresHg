@@ -5,6 +5,8 @@ port: "21"
 username: "escuex"
 password: "bUCtK00j2FD5usXb"
 path: "public_html"
+# path: "public_html/alpha"
+# local_path: "alpha/src"
 exclude:
     - .DS_Store
     - .sass-cache
@@ -22,5 +24,7 @@ exclude:
     - bower_components
     - node_modules
     - npm-debug.log
+    - alpha/gulpfile.js
+    - gulpfile.js
 
 revision_file: .revision

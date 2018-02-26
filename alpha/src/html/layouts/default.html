@@ -9,10 +9,23 @@
     <!--Bootstrap CSS -->
     <link rel="stylesheet" href="{{root}}css/font-awesome.min.css">
     <link rel="stylesheet" href="{{root}}css/style.css">
-    <title>{{title}} |  Escuelas Libres de Mercurio</title>
+
+    <!-- TEMPORAL BORRAR EN PRODUCCION -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- TEMPORAL BORRAR -->
+
+    <title>{{title}} |  {{settings.site}}</title>
+
+
   </head>
   <body>
-    {{> body}}
+    <main>
+      <!-- header -->
+      {{> header}}
+      {{> body}}
+      <!-- footer -->
+      {{> footer}}
+    </main>
     {{> footerjavascripts}}
   </body>  
 </html>

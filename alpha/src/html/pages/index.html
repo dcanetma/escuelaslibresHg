@@ -1,13 +1,290 @@
 ---
 layout: default
-title: Home como va
+title: Bienvenida
 ---
-    <div class="jumbotron">
-        <h1 class="display-3">{{title}}</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="m-y-md">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more!</a>
-        </p>
-    </div>
+<!-- #presentacion -->
+<section id="presentacion" class="jumbotron jumbotron-first jumbotron-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+				<h1 class="display-5">¿Eres un centro educativo?</h1>
+				<h2 class="display-3 text-uppercase mb-3">
+					¡Apúntate al programa <span>Escuelas Libres de Mercurio</span>!
+				</h2>
+				<p class="lead mr-md-5">
+					El programa <strong>Escuelas Libres de Mercurio</strong> ayuda al centro educativo a transmitir valores de <strong>sostenibilidad y ecología</strong> desde la escuela al alumnado y de éste a sus familias, contribuyendo a la educación de la sociedad en su conjunto.
+				</p>
+				<p class="lead  mb-4">
+					<strong>¡Eliminemos el mercurio de los centros educativos!</strong>
+				</p>
+				<p>
+					<a class="btn btn-primary btn-lg" href="#programa" role="button" title="Eliminemos el mercurio de los centros educativos">Apúntate al programa</a>
+				</p>							
+			</div>						
+			<div class="col-3">
+				<img src="assets/images/leaf.png" alt="CASIO green marker" title="CASIO green marker"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- #beneficios -->
+<section id="programa" class="bg-light">
+	<div class="container py-5">
+		<div class="row pb-5 text-center">
+			<div class="col-12 ">
+				<h2 class="display-4">Beneficios que obtiene el centro educativo</h2>
+				<p class="lead">
+					El programa Escuelas libres de mercurio ayuda al centro educativo
+				</p>
+			</div>
+		</div>
+		<div class="row pb-5 align-items-start">
+			<div class="col-xs-12 col-md-6">
+				<p>Transmitir <strong>valores de sostenibilidad y ecología</strong> desde la escuela a lxs alunmxs y de estxs a sus familias contribuyendo a la educación de la sociedad en su conjunto.</p>
+				<p><strong>Material audiovisual y guía práctica</strong> para realizar un taller sobre sostenibilidad y anti-obsolescencia programada.</p>
+				<p><strong>Unidad pedagógica multimedia</strong> sobre el mercurio creado por Ambientech (recomendado por el Ministerio de Educación).</p>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<p><strong>Certificación oficial</strong> "Escuela libre de mercurio" (una vez el centro educativo llegue al 80% de proyectores libres de mercurio; avalado por el pueblo de Minamata).</p>
+				<p><strong>Distintivo digital "Educación por la sostenibilidad"</strong>, avalado por Escuelas verdes (tras realizar el Taller sostenible).</p>
+				<p><strong>Reconocimiento y difusión</strong> a través de las entidades que participan en el Programa Escuelas Libres de Mercurio.</p>
+			</div>
+		</div>
+	</div>				
+</section>
+
+<!-- #inscripcion - Formulario -->
+<section id="inscripcion" >
+	<div class="container py-5">
+		<!-- Form Acumbamail: action points to '' -->
+		<form id="formulario" action="https://acumbamail.com/newform/subscribe/e1fcQ4VIblfO9s3LEdz3WFhmd/7663/" method="post" class="needs-validation" novalidate>
+			<div class="row text-center px-5">
+				<div class="col-12 ">
+				  	<h2 class="display-4">¿Cómo me apunto?</h2>
+				  	<p class="lead">El primer paso para participar en el programa consiste en rellenar y enviar el siguiente formulario.</p>
+				</div>
+			</div>
+			<fieldset class="p-5">
+				<div class="row  text-center mb-4">
+				  <div class="col-xs-12 col-md-6 form-group mb-4">
+						<label class="form-control-label" for="char_01" name="char_01">Nombre</label>
+				    <input type="text" class="form-control" id="char_01" name="char_01" placeholder="¿Cuál es su nombre?" required>
+				    <div class="valid-feedback">¡Parece correcto!</div>
+				    <div class="invalid-feedback">Debe indicarnos su nombre para continuar</div>
+				  </div>
+				  <div class="col-xs-12 col-md-6 form-group mb-4">
+						<label class="form-control-label" for="email_1" name="email_1">E-mail</label>
+				    <input type="email" class="form-control" id="email_1" name="email_1"  placeholder="Su dirección de correo electrónico" required>
+				    <div class="valid-feedback">¡Correcto, siguiente!</div>
+				    <div class="invalid-feedback">La dirección no parece correcta</div>
+				  </div>
+				</div>
+
+				<div class="row text-center">
+				  <div class="col-xs-12 col-md-6 form-group mb-4">
+						<label class="form-control-label" for="char_02">Nombre del centro educativo</label>
+				    <input type="text" class="form-control" id="char_02" name="char_02" placeholder="Indique el nombre del centro" required>
+				    <div class="valid-feedback">¡Gracias!</div>
+				    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+				  </div>
+				  <div class="col-xs-12 col-md-6 form-group mb-4">
+						<label class="form-control-label" for="char_03">Teléfono</label>
+				    <input type="text" class="form-control" id="char_03" name="char_03"  placeholder="Déjenos un número de teléfono de contacto">
+				    <div class="valid-feedback">¡Gracias!</div>
+				    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+				  </div>						
+				</div>
+
+				<div class="row text-center">
+				  <div class="col-xs-12 col-md-6 form-group mb-4">
+						<label class="form-control-label" for="char_04">Población</label>
+				    <input type="text" class="form-control" id="char_04" name="char_04" placeholder="Nombre de la ciudad o población" required>
+				    <div class="valid-feedback">¡Gracias!</div>
+				    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+
+				  </div>
+				  <div class="col-xs-12 col-md-6 form-group mb-4">
+						<label class="form-control-label" for="char_05">Provincia</label>
+				    <input type="text" class="form-control" id="char_05" name="char_05" placeholder="Indique la provincia" >
+				    <div class="valid-feedback">Le agradecemos si indica la provincia.</div>
+				  </div>						
+					
+				</div>
+
+				<div class="row text-center">
+						<div class="col-xs-12 col-md-6 form-group mb-4">
+								<div class="row mb-3">
+									<div class="col">
+										<label class="form-control-label" for="char_06">Tipo de centro</label>									
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadio1" name="char_06" class="custom-control-input" value="Público" required>
+										  <label class="custom-control-label" for="customRadio1">Público</label>
+										</div>
+										<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadio2" name="char_06" class="custom-control-input" value="Privado" required>
+										  <label class="custom-control-label" for="customRadio2">Privado</label>
+										</div>							
+										<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadio3" name="char_06" class="custom-control-input" value="Concertado" required>
+										  <label class="custom-control-label" for="customRadio3">Concertado</label>
+										</div>		
+
+									</div>
+								</div>							
+
+								</div>
+						<div class="col-xs-12 col-md-6 form-group mb-4">
+							<label class="form-control-label mb-3" for="inputSuccess7">Tipo de educación</label>
+							<select class="custom-select" id="combobox_1" name="combobox_1" required>
+							  <option value="">Indique la educación que se imparte</option>
+							  <option value="Primaria y/o secundaria">Primaria y/o secundaria</option>
+							  <option value="Universidad">Universidad</option>
+							  <option value="Idiomas">Idiomas</option>
+							  <option value="Otros">Otros</option>
+							</select>							
+					    <div class="valid-feedback">¡Gracias!</div>
+					    <div class="invalid-feedback">Este campo es necesario. Indíquelo para continuar.</div>
+
+
+						</div>
+				</div>
+
+				<div class="row text-center mt-5 mb-4">
+				  <div class="col-12 form-group">
+				    <div class="form-check">
+				      <input class="form-check-input" type="checkbox" value="" id="legalCheck" required>
+				      <label class="form-check-label" for="legalCheck">
+				        <b>Aceptación de condiciones</b> lorem ipsum dolor sit amet, tralará olit.
+				      </label>
+				      <div class="invalid-feedback">
+				        Debe aceptar las condiciones legales para continuar.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row  text-center">
+					<div class="col-12">
+						<button id="button-enviar" class="btn btn-primary px-5 py-3" type="submit">Ínscribe tu escuela ahora</button>
+					</div>
+
+					<!-- <input type="submit" value="Suscribirme a la lista"> -->
+
+				</div>
+
+				<input name="char_07" value="ecolibremercurio201801" type="hidden">
+				<input type="hidden" name="ok_redirect" value="http://www.escuelaslibresdemercurio.com/hemos-recibido-su-solicitud-de-registro">
+			</fieldset>
+		</form>
+	</div>
+</section>
+
+<!-- Convenio de Minamata -->
+<section id="minamata" class="bg-light">
+	<div class="container">
+		<div class="row pb-5 text-md-center">
+			<div class="col-12 ">
+				<h2 class="display-4">Avanzados al convenio de Minamata</h2>
+				<p class="lead">
+					El Convenio de Minamata sobre el Mercurio es un <strong>tratado mundial</strong> para proteger la <strong>salud humana y el medio ambiente</strong> de los efectos del mercurio.							</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6 pr-md-3">
+				<p>El Convenio de Minamata sobre el Mercurio <strong>entró en vigor en agosto de 2017</strong> y prohibe la producción, importación y exportación de productos que contengan mercurio tales como las lámparas fluorescentes o las pilas de botón.</p>
+				<p>CASIO ha invertido en la creación de nuevos proyectores sin mercurio para cumplir con el Convenio de Minamata. Los ecoproyectores CASIO son los pioneros en eliminar el mercurio y, por ello, tienen una serie de beneficios y certificaciones sostenibles como el <strong>sello ISSOP</strong> y el <strong>certificado TCO</strong>.</p>
+				<ul class="list-inline logos-other equal">
+				  <li class="list-inline-item"><img src="./assets/images/logo-tco.png" alt="TCO" title="TCO"></li>
+				  <li class="list-inline-item"><img src="./assets/images/logo-issop.png" alt="ISSOP" title="ISSOP"></li>
+				  <li class="list-inline-item"><img src="./assets/images/logo-minamata-esp.png" alt="Convención de Minamata logo" title="Convención de Minamata logo"></li>
+				</ul>
+			</div>						
+			<div class="col-xs-12 col-md-6">
+				<a href="#">
+					<img class="img-thumbnail p-3" src="./assets/images/minamata-video-snapshot.jpg" alt="Reproducir vídeo sobre el Convenio de Minamata" title="Reproducir vídeo sobre el Convenio de Minamata">
+				</a>
+			</div>						
+		</div>
+	</div>
+
+</section>
+
+<!-- Beneficios ecoproyectores -->
+<section id="ecoproyeccion">
+	<h2>…</h2>
+	<p>…</p>
+</section>
+
+<!-- Hero back -->
+<section id="hero" class="jumbotron jumbotron-last jumbotron-fluid">   
+	<div class="container">
+		<div class="row pb-5 text-md-center justify-content-center">
+			<div class="col-10 card">
+				<h2 class="display-4 text-uppercase">Apunta tu centro al programa</h2>
+				<p class="lead">
+					Ahora es el momento de dar el salto ecológico y de ahorro ecológico. Adapta el centro a una nueva etapa educativa.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-lg" href="#inscripcion" role="button" title="Inscriba su centro">Quiero inscribirme en el programa</a>
+				</p>							
+			</div>
+		</div>					
+	</div>
+</section>
+
+<!-- Pre-footer -->
+<section id="pre-footer" class="bg-green">
+	<div class="container">
+		<div class="row align-items-end mb-4">
+			<div class="col-md-7">
+				<h5>CASIO Green Technology</h5>
+				<ul class="mt-4 list-inline">
+					<li class="list-inline-item mr-5">
+						<a href="https://www.ecoproyectorescasio.com/">
+							<img class="logo-footer-first" src="./assets/images/ecoproyectores-2017_7.svg">
+						</a>									
+					</li>
+					<li class="list-inline-item mr-2">
+	          <a class="logo-credits" href="https://www.ecoproyectorescasio.com/actualidad/casio-ecoproyectores-issop-sostenible/" id="logo-issop">
+	           <img src="assets/images/logo-issop.png" alt="certificado ISSOP por fabricar productos sostenibles"> 
+	          </a>
+					</li>
+					<li class="list-inline-item mr-2">
+            <a class="logo-credits" href="http://www.casio-projectors.eu/es/ambiente/" id="logo-minamata">
+	           <img src="assets/images/logo-minamata-esp.png" alt="Convenio de Minamata"> 
+	          </a>
+					</li>
+					<li class="list-inline-item">
+            <a class="logo-credits" href="https://www.ecoproyectorescasio.com/actualidad/ecoproyectores-casio-certificado-tco/" id="logo-tco">
+	           <img src="assets/images/logo-tco.png" alt="Certificado TCO, estándar internacional de sostenibilidad"> 
+	          </a>
+					</li>
+				</ul>
+			</div>						
+			<div class="col-md-3">
+			  <!-- Address -->
+			  <address class="">
+			  	CASIO ESPAÑA						  	
+			    <br>
+			    Josep Plà, nº 1. B-2
+			    <br>
+			    Planta 12. 08019 Barcelona, (ES)
+			    <br>
+			    +34 934 858 400
+			  </address>
+
+
+				</p>
+			</div>						
+			<div class="col-md-1 ">
+				<p class="align-text-bottom"><a href="http://www.casio.es">www.casio.es</a></p>				
+			</div>						
+		</div>
+	</div>
+</section>
+
