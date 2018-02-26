@@ -19,7 +19,8 @@ exclude:
     - alpha/node_modules
     - alpha/npm-debug.log
     - alpha/.sass-cache
-
-
+    - bower_components
+    - node_modules
+    - npm-debug.log
 
 revision_file: .revision
