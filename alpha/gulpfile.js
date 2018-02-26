@@ -2,7 +2,7 @@ const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
 var concat = require('gulp-concat');
-var nodepath =  'node_modules/';
+var panini = require('panini');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -27,7 +27,8 @@ gulp.task('serve', ['sass'], function() {
     });
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch('src/js/*.js', ['js', browserSync.reload]);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+
+    gulp.watch(['src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html', browserSync.reload]);
 });
 
 // Move Fonts to src/fonts
@@ -42,5 +43,25 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('src/css'));
 })
 
+// Compile html using panini
+gulp.task('html', function() {
+  gulp.src('src/html/pages/**/*.html')
+    .pipe(panini({
+      root: 'src/html/pages/',
+      layouts: 'src/html/layouts/',
+      partials: 'src/html/includes/',
+      helpers: 'src/html/helpers/',
+      data: 'src/html/data/'
+    }))
+    .pipe(gulp.dest('src'))
+    .on('finish', browserSync.reload);
+});
 
-gulp.task('default', ['js','serve', 'fa', 'fonts']);
+gulp.task('html:reset', function(done) {
+  panini.refresh();
+  done();
+});
+
+gulp.task('build', ['html', 'js', 'fa', 'fonts']);
+
+gulp.task('default', ['html', 'js', 'serve', 'fa', 'fonts']);
