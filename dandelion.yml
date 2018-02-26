@@ -14,5 +14,12 @@ exclude:
     - README.md
     - sandbox
     - backup
+    - alpha/.DS_Store
+    - alpha/bower_components
+    - alpha/node_modules
+    - alpha/npm-debug.log
+    - alpha/.sass-cache
+
+
 
 revision_file: .revision
