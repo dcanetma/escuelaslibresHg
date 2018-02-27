@@ -1,8 +1,9 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
-var concat = require('gulp-concat');
-var panini = require('panini');
+var concat        = require('gulp-concat');
+var panini        = require('panini');
+let cleanCSS      = require('gulp-clean-css');
 
 var sassOptions = {
   outputStyle: 'compressed'
@@ -33,8 +34,9 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"  
     });
     gulp.watch(['src/scss/**/*.scss'], ['sass']);
+    gulp.watch('src/css/*.css', ['minify-css', browserSync.reload]);
     gulp.watch('src/js/*.js', ['js', browserSync.reload]);
-    gulp.watch(['src/html/data/*.yml','src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html']);
+    gulp.watch(['src/html/data/*.yml','src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html:reset','html', browserSync.reload]);
     // gulp.watch(['src/html/{layouts,includes,helpers,data}/**/*'], ['html:reset','html', browserSync.reload]);
 
 });
@@ -51,6 +53,13 @@ gulp.task('css', function() {
   return gulp.src(['node_modules/wowjs/css/libs/animate.css','node_modules/font-awesome/css/font-awesome.min.css'])
     .pipe(gulp.dest('src/css'));
 })
+
+gulp.task('minify-css', () => {
+  return gulp.src('src/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest('src/css-min'));
+});
 
 // Compile html using panini
 gulp.task('html', function() {
@@ -71,5 +80,5 @@ gulp.task('html:reset', function(done) {
   done();
 });
 
-gulp.task('build', ['html', 'js', 'css', 'fonts']);
-gulp.task('default', ['serve', 'html', 'js', 'css', 'fonts']);
+gulp.task('build', ['html', 'js', 'minify-css', 'css', 'fonts']);
+gulp.task('default', ['serve', 'html', 'js', 'minify-css', 'css', 'fonts']);
