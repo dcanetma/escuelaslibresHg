@@ -105,6 +105,13 @@ label.custom-control-label, label.form-check-label {
 	color: $gray-500;
 	font-size: 1.125rem;
 }
+
+label.custom-control-label {
+	b {
+		color: $gray-900;
+	}
+}
+
 .custom-control-label::before {
     top: .5rem;
 }
