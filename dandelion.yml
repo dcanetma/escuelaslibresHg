@@ -4,9 +4,10 @@ host: "www.escuelaslibresdemercurio.com.dedi302.your-server.de"
 port: "21"
 username: "escuex"
 password: "bUCtK00j2FD5usXb"
-path: "public_html"
-# path: "public_html/alpha"
-# local_path: "alpha/src"
+# path: "public_html"
+path: "public_html/alpha"
+local_path: "alpha/src"
+
 exclude:
     - .DS_Store
     - .sass-cache
