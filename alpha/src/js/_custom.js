@@ -28,6 +28,5 @@
   //   e.preventDefault(); 
   //   $('#legal').toggle("slide", { direction: "right" }, 1000);
   // });
-
-
 })();
+
