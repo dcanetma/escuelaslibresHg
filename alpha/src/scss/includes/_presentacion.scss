@@ -38,9 +38,11 @@
 
 #hero {
 	background: url('../images/bg-apunta-tu-centro.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-size: cover;
+
   padding-top: 10rem; 
   padding-bottom: 18rem; 
   margin-bottom: 0;
