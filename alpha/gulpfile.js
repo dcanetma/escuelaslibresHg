@@ -44,14 +44,9 @@ gulp.task('fonts', function() {
 })
 
 // Move Animate CSS to src/css
-gulp.task('animate', function() {
-  return gulp.src('node_modules/wowjs/css/libs/animate.css')
-    .pipe(gulp.dest('src/css'));
-})
-
 // Move Font Awesome CSS to src/css
-gulp.task('fa', function() {
-  return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+gulp.task('css', function() {
+  return gulp.src(['node_modules/wowjs/css/libs/animate.css','node_modules/font-awesome/css/font-awesome.min.css'])
     .pipe(gulp.dest('src/css'));
 })
 
@@ -74,6 +69,5 @@ gulp.task('html:reset', function(done) {
   done();
 });
 
-gulp.task('build', ['html', 'js', 'fa', 'fonts','animate']);
-
-gulp.task('default', ['serve', 'html', 'js', 'fa', 'fonts', 'animate']);
+gulp.task('build', ['html', 'js', 'css', 'fonts']);
+gulp.task('default', ['serve', 'html', 'js', 'css', 'fonts']);

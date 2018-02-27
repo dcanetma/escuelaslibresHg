@@ -1,0 +1,22 @@
+#pre-footer {
+	// background: url('../images/bg-footer.svg');
+ //  background-repeat: no-repeat;
+ //  background-position: center;
+ //  background-size:cover;	
+ 	position: relative;
+ 	z-index: 1;
+	padding-top: 5rem;
+	padding-bottom: 0;
+  color: #ffffff;
+  margin-top: -10rem;
+ 	svg {
+ 		position: absolute;
+ 		left: 0;
+ 		top: 0;
+ 		z-index: -1;
+ 	}
+
+  a {
+  	color: #fff;
+  }
+}
