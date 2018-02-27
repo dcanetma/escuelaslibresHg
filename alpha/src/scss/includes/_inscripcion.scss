@@ -119,6 +119,10 @@ label.custom-control-label {
 .custom-control-label::after {
     top: .5rem;
 }		
+.custom-checkbox label.custom-control-label {
+	text-align: left;
+	margin-left: .25rem;
+}
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
 	background-color: $teal;
 }

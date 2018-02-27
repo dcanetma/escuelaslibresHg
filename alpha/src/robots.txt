@@ -1,6 +1,5 @@
 User-agent: * 
-Disallow: /alpha/
-Disallow: /newsletters/
+Disallow: /old/
 Disallow: /privacidad.html
 Disallow: /privacidad
 Disallow: /404.html

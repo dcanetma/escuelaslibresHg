@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="{{root}}css/font-awesome.min.css">
     <link rel="stylesheet" href="{{root}}css/style.css">
 
-    <!-- TEMPORAL BORRAR EN PRODUCCION -->
-    <meta name="robots" content="noindex, nofollow">
-    <!-- TEMPORAL BORRAR -->
-
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="favicon.ico">
 
@@ -29,8 +25,8 @@
     <meta property="og:url" content="{{settings.url}}{{canonical}}" />
     <link rel='canonical' href='{{settings.url}}{{canonical}}' />
 
-    <meta name="twitter:image" content="{{settings.url}}/images/hoja.png">
-    <meta property="og:image" content="{{settings.url}}/images/hoja.png"/>
+    <meta name="twitter:image" content="{{settings.url}}/images/snapshot.jpg">
+    <meta property="og:image" content="{{settings.url}}/images/snapshot.jpg"/>
 
 
     <meta name="creator" content="{{settings.company}}"/>
@@ -40,7 +36,7 @@
 
 
   </head>
-  <body>
+  <body class="{{class}}">
     <main>
       <!-- header -->
       {{> header}}
