@@ -17,8 +17,9 @@
   border-bottom: 10px solid #f6fcf6;
 
 	h1 {
+		font-family: 'karbonlight', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";		
 		color: $teal;
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	h2 {
 		line-height: 1;
@@ -36,11 +37,10 @@
 }
 
 #hero {
-	width:100%;
 	background: url('../images/bg-apunta-tu-centro.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size:100%;
+  background-size: cover;
   padding-top: 10rem; 
   padding-bottom: 10rem; 
   margin-bottom: 0;

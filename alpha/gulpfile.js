@@ -18,10 +18,13 @@ gulp.task('sass', function() {
 
 // Move JS Files to src/js
 gulp.task('js', function() {
-    return gulp.src(['src/js/_custom.js','node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
-        .pipe(concat('app.js'))
-        .pipe(gulp.dest("src/js"))
-        .pipe(browserSync.stream());
+    // return gulp.src([ 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js//dist/umd/popper.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js'])
+    //   .pipe(gulp.dest('src/js'));
+
+    return gulp.src([ 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js//dist/umd/popper.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'src/js/_custom.js'])
+      .pipe(concat('app.js'))
+      .pipe(gulp.dest('src/js'))
+      .pipe(browserSync.stream());
 });
 
 // Watch Sass & Serve

@@ -16,4 +16,18 @@
       }, false);
     });
   }, false);
+
+
+  $('a.legal-more').click(function(event){
+      event.preventDefault();
+      event.stopPropagation();  
+      $('#legal').toggle('slow');  
+  });
+
+  // $('a.legal-more').click(function(e) {
+  //   e.preventDefault(); 
+  //   $('#legal').toggle("slide", { direction: "right" }, 1000);
+  // });
+
+
 })();
