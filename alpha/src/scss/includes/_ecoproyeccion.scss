@@ -15,7 +15,7 @@
 	  top:0;
 		background: url('../images/imatge-test.jpg');
 	  background-repeat: no-repeat;
-	  background-position: 50% 40%;
+	  background-position: 50% 45%;
 	  background-size: 50%; 
   }
 
@@ -23,7 +23,13 @@
   	border-radius: .75rem;
   	max-width: 18rem;
   	z-index: 2;
+
+  	&.card-last {
+  		margin-top: -4rem;
+  	}
   }
+
+
 
   .card-img-top {
   	max-width: 30%;
