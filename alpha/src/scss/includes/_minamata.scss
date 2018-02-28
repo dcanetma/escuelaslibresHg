@@ -24,6 +24,9 @@
    	background-position: left bottom; 
    	background-repeat: repeat-x;
    	background-size: 100%;
+   	@include media-breakpoint-down(sm) {
+	   	background-size: 250%;
+   	}
 	}
 
 }
