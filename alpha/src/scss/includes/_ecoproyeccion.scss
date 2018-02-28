@@ -29,7 +29,7 @@
   	&.card-last {
   		margin-top: -4rem;
   	}
-	  @include media-breakpoint-down(md) {
+	  @include media-breakpoint-down(lg) {
 	  	&.card-last {
 	  		margin-top: 0;
 	  	}

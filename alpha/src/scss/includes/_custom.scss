@@ -96,6 +96,9 @@ address {
 .btn-lg {
 	border-radius: 3rem;
 	padding: 1.5rem 2.5rem;
+  @include media-breakpoint-down(md) {
+		padding: 1rem 1.5rem;
+  }
 }
 
 .img-thumbnail {

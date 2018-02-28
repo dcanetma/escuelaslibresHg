@@ -4,6 +4,9 @@
 		padding-left: 60px;
 		padding-top: .25rem;
 		border-color: $gray-200 !important;
+   	@include media-breakpoint-down(md) {
+			padding-left: 40px;
+   	}
 		&:after {
 			position: absolute;
 			content: "";
@@ -16,6 +19,13 @@
 			background: url('../images/hoja-beneficios.svg');
 		  background-repeat: no-repeat;
 		  background-position: 0 0;
+	   	background-size: 33px 33px;
+	   	@include media-breakpoint-down(md) {
+		  	background-position: 0 4px;
+	   		background-size: 22px 22px;
+	   	}
+
+
 		}
 	}
 }

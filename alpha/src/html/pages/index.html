@@ -9,11 +9,14 @@ class: page-home
 <section id="presentacion" class="jumbotron jumbotron-first jumbotron-fluid">
 	<div class="container">
 		<div class="row justify-content-md-center">
-			<div class="col-8 col-md-8">
+			<div class="col-12 col-md-8">
 				<h1 class="display-5">¿Eres un centro educativo?</h1>
 				<h2 class="display-4 text-uppercase mb-3">
 					¡Apúntate al programa <span>Escuelas Libres de Mercurio</span>!
 				</h2>
+				<img src="{{ root }}images/hoja.png" class="img-fluid mt-3 mb-5 pl-4 pr-5 d-block d-sm-none" alt="CASIO green marker" title="CASIO green marker"/>
+
+
 				<p class="lead mr-md-5">
 					Transmite desde tu centro educativo los valores de <strong>sostenibilidad y ecología</strong> al alumnado contribuyendo a la educación de la sociedad.
 				</p>
@@ -24,7 +27,7 @@ class: page-home
 					<a class="btn btn-primary btn-lg" href="#inscripcion" role="button" title="Eliminemos el mercurio de los centros educativos">Apúntate al programa</a>
 				</p>							
 			</div>						
-			<div class="col-4 col-md-4 pl-5 pt-4 ">
+			<div class="col-12 col-md-4 pl-5 pt-4 d-none d-md-block">
 				<img src="{{ root }}images/hoja.png" class="img-fluid" alt="CASIO green marker" title="CASIO green marker"/>
 			</div>
 		</div>
@@ -33,8 +36,8 @@ class: page-home
 
 <!-- #beneficios -->
 <section id="programa" class="bg-light">
-	<div class="container py-5">
-		<div class="row pb-5 text-center">
+	<div class="container py-3 py-md-5">
+		<div class="row pb-3 pb-md-5 text-center">
 			<div class="col-12 ">
 				<h2 class="display-4">Beneficios que obtiene el centro educativo</h2>
 				<p class="lead">
@@ -42,7 +45,7 @@ class: page-home
 				</p>
 			</div>
 		</div>
-		<div class="benefits row pb-5 align-items-start">
+		<div class="benefits row pb-1 pb-md-5 align-items-start">
 			<div class="col-xs-12 col-md-6">
 				<p class="border-bottom pb-4 wow slideInLeft" data-wow-iteration="1">Transmitir <strong>valores de sostenibilidad y ecología</strong> desde la escuela a lxs alunmxs y de estxs a sus familias contribuyendo a la educación de la sociedad en su conjunto.</p>
 				<p class="border-bottom pb-4 wow slideInLeft" data-wow-delay="0.15s" data-wow-iteration="1"><strong>Material audiovisual y guía práctica</strong> para realizar un taller sobre sostenibilidad y anti-obsolescencia programada.</p>
@@ -63,12 +66,12 @@ class: page-home
 		<!-- Form Acumbamail: action points to '' -->
 		<form id="formulario" action="https://acumbamail.com/newform/subscribe/e1fcQ4VIblfO9s3LEdz3WFhmd/7663/" method="post" class="needs-validation" novalidate>
 			<div class="row text-center pb-4 justify-content-md-center">
-				<div class="col-10 pb-1 ">
+				<div class="col-12 col-md-10 pb-1 ">
 				  	<h2 class="display-4">¿Cómo me apunto?</h2>
 				  	<p class="lead">El primer paso para participar en el programa consiste en rellenar y enviar el siguiente formulario.</p>
 				</div>
 			</div>
-			<fieldset class="p-5 bg-light">
+			<fieldset class="p-2 p-md-5 bg-light">
 				<div class="row  text-center mb-4">
 				  <div class="col-xs-12 col-md-6 form-group mb-4">
 						<label class="form-control-label" for="char_01" name="char_01">Nombre</label>
@@ -174,8 +177,8 @@ class: page-home
 				</div>
 
 				<div class="row  text-center">
-					<div class="col-12">
-						<button id="button-enviar" class="btn btn-primary px-5 py-3" type="submit">Ínscribe tu escuela ahora</button>
+					<div class="col-12 mb-3 mb-md-1">
+						<button id="button-enviar" class="btn btn-primary" type="submit">Ínscribe tu escuela ahora</button>
 					</div>
 
 					<!-- <input type="submit" value="Suscribirme a la lista"> -->
@@ -273,7 +276,7 @@ class: page-home
 	    </div>
 		</div>
 		<div class="row align-items-start justify-content-center mb-4" >
-	    <div class="col-12 col-md-6">
+	    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
 	      <div class="card card-last text-center pt-4 rounded-3 wow bounceInUp" data-wow-delay="0.35s" data-wow-iteration="1">
 				  <img class="card-img-top mx-auto" src="{{ root }}images/beneficio-ahorro.svg" alt="Bajo Consumo">
 				  <div class="card-body">
