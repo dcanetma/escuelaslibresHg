@@ -5,7 +5,7 @@ port: "21"
 username: "escuex"
 password: "bUCtK00j2FD5usXb"
 # path: "public_html"
-path: "public_html/alpha"
+path: "public_html"
 local_path: "alpha/src"
 
 exclude:
