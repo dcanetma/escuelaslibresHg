@@ -18,7 +18,8 @@ body {
 	font-size: 1.25rem;
 	color: $gray-500;
 }
-
+hr {
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'karbonregular', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	font-weight: normal;
@@ -28,12 +29,21 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 	font-family: 'karbonsemibold', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	font-weight: normal;
 }
+@include media-breakpoint-down(md) {
+	p {
+		font-size: 1rem;
+	}
+}
+
 
 .lead {
 	font-family: 'karbonlight', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	font-size: 1.625rem;
 	font-weight: normal;
 	color: $teal;
+	font-size: 1.625rem;
+  @include media-breakpoint-down(md) {
+		font-size: 1.125rem;
+  }
 }
 .lead strong {
 	font-family: 'karbonregular', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";	
@@ -72,6 +82,9 @@ address {
 	font-size: 75%;
 	padding: 1.5rem 2rem;
 	border-radius: 2rem;
+  @include media-breakpoint-down(md) {
+		padding: 1rem 1.5rem;
+  }
 }
 
 .btn-lg {

@@ -13,10 +13,13 @@
 	  z-index: 1;
 	  left: 0;
 	  top:0;
-		background: url('../images/imatge-test.jpg');
-	  background-repeat: no-repeat;
-	  background-position: 50% 45%;
-	  background-size: 50%; 
+	  @include media-breakpoint-up(lg) {
+			background: url('../images/imatge-test.jpg');
+		  background-repeat: no-repeat;
+		  background-position: 50% 45%;
+		  background-size: 50%; 
+	  }
+
   }
 
   .card {
@@ -27,6 +30,13 @@
   	&.card-last {
   		margin-top: -4rem;
   	}
+	  @include media-breakpoint-down(md) {
+	  	&.card-last {
+	  		margin-top: 0;
+	  	}
+	  }
+
+
   }
 
 
