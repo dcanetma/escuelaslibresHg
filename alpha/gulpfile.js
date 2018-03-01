@@ -42,7 +42,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('src/js/*.js', ['js', browserSync.reload]);
 
     // Generate html with panini + minify-html
-    gulp.watch(['src/html/data/*.yml','src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html:reset','html',browserSync.reload]);
+    gulp.watch(['src/html/data/*.yml','src/html/**/*.html','src/html/pages/*.html','src/html/layouts/*.html', 'src/html/includes/*.html'], ['html:reset','html']);
     // gulp.watch(['src/html/{layouts,includes,helpers,data}/**/*'], ['html:reset','html', browserSync.reload]);
     gulp.watch('src/*.html', ['minify-html', browserSync.reload]);
 });
