@@ -208,20 +208,38 @@ class: page-home
 				<p>CASIO ha invertido en la creación de nuevos proyectores sin mercurio para cumplir con el Convenio de Minamata. Los ecoproyectores CASIO son los pioneros en eliminar el mercurio y, por ello, tienen una serie de beneficios y certificaciones sostenibles como el <strong>sello ISSOP</strong> y el <strong>certificado TCO</strong>.</p>
 				<ul class="mt-2 list-inline logos-other equal">
 				  <li class="list-inline-item mr-2 mr-md-3">
-				  	<img src="{{ root }}images/logo-tco.svg" alt="TCO" title="TCO">
-				  </li>
+				  	<a href="http://feniss.org/sello-issop/" title="Certificado ISSOP de fabricación sostenible"><img src="{{ root }}images/logo-tco.svg" alt="TCO" title="TCO">
+				  </li></a>
 				  <li class="list-inline-item mr-2 mr-md-3">
-				  	<img src="{{ root }}images/logo-issop.png" alt="ISSOP" title="ISSOP">
-				  </li>
+				  	<a href="http://tcocertified.com/" title="Certificado TCO, estándar internacional de sostenibilidad"><img src="{{ root }}images/logo-issop.png" alt="ISSOP" title="ISSOP">
+				  </li></a>
 				  <li class="list-inline-item mr-2 mr-md-3">
-				  	<img src="{{ root }}images/logo-minamata.svg" alt="Convención de Minamata logo" title="Convención de Minamata logo">
+				  	<a href="http://www.mercuryconvention.org/" title="Convenio de Minamata sobre el Mercurio"><img src="{{ root }}images/logo-minamata.svg" alt="Convención de Minamata logo" title="Convención de Minamata logo"></a>
 				  </li>
 				</ul>
 			</div>						
 			<div class="col-xs-12 col-md-6">
-				<a href="#" title="Reproducir vídeo">
+				<a href="https://www.youtube.com/watch?v=N2uZ_1Kgrx4" data-toggle="modal" data-src="https://www.youtube.com/embed/N2uZ_1Kgrx4" data-target="#myModal" title="Reproducir vídeo" class="video" target="_blank">
 					<img class="img-thumbnail p-3" src="{{ root }}images/captura-minamata.jpg" alt="Reproducir vídeo sobre el Convenio de Minamata" title="Reproducir vídeo sobre el Convenio de Minamata">
 				</a>
+
+				<!-- Modal vox for video -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog " role="document">
+				    <div class="modal-content ">
+				      <div class="modal-body ">
+				       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>        
+				        <!-- 16:9 aspect ratio -->
+								<div class=" embed-responsive embed-responsive-16by9">
+								  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+								</div>
+				      </div>
+				    </div>
+				  </div>
+				</div> 				
+
 			</div>						
 		</div>
 	</div>
@@ -233,7 +251,7 @@ class: page-home
 	<div class="container py-5">
 		<div class="row pb-5 text-center">
 			<div class="col-12 ">
-				<h2 class="display-4">Los beneficios de los ecoproyectores</h2>
+				<h2 class="display-4">Los beneficios de los Ecoproyectores</h2>
 				<p class="lead">
 					CASIO fabrica proyectores libres de mercurio desde el 2010. 
 				</p>

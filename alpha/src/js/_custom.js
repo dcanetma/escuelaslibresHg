@@ -25,12 +25,33 @@
   });
   
   // Bind to the click of all links with a #hash in the href
-  $('a[href^="#"]').click(function(e) {
+  $('a[href^="#"]').click(function(event) {
     // Prevent the jump and the #hash from appearing on the address bar
-    e.preventDefault();
+    event.preventDefault();
+    event.stopPropagation(); 
     // Scroll the window, stop any previous animation, stop on user manual scroll
     // Check https://github.com/flesler/jquery.scrollTo for more customizability
     $(window).stop(true).scrollTo(this.hash, {duration:1000, interrupt:true});
   });
+
+  // Gets the video src from the data-src on each button
+  var $videoSrc;  
+  $('a.video').click(function(event) {
+      // event.preventDefault();
+      // event.stopPropagation(); 
+      $videoSrc = $(this).data( "src" );
+  });
+  console.log($videoSrc);
+        
+  // when the modal is opened autoplay it  
+  $('#myModal').on('shown.bs.modal', function (e) {
+  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+  $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+  });
+  // stop playing the youtube video when I close the modal
+  $('#myModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#video").attr('src',$videoSrc); 
+  }); 
 
 })();
