@@ -70,11 +70,12 @@ p.legal {
 
 .form-control,
 .custom-select {
+	font-family: 'karbonlight', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";		
 	border-radius: 0;
 	border: none;
   border-bottom: 1px solid #ced4da;
   text-align: center;
-  color: $gray-500;
+  color: $gray-300;
   font-size: 1.125rem;
 }
 

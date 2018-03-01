@@ -24,8 +24,13 @@
 		  	background-position: 0 4px;
 	   		background-size: 22px 22px;
 	   	}
-
-
 		}
+	}
+}
+
+.border-bottom-last {
+	@include media-breakpoint-down(sm) {
+    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid $gray-700 !important;
 	}
 }
