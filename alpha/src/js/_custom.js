@@ -35,17 +35,17 @@
   });
 
   // Gets the video src from the data-src on each button
-  var $videoSrc;  
+  var $videoSrc = 'https://www.youtube.com/embed/N2uZ_1Kgrx4';  
   $('a.video').click(function(event) {
       event.preventDefault();
-      event.stopPropagation(); 
+      // event.stopPropagation(); 
       $videoSrc = $(this).data( "src" );
   });
         
   // when the modal is opened autoplay it  
   $('#myModal').on('shown.bs.modal', function (e) {
-  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-  $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
   });
   // stop playing the youtube video when I close the modal
   $('#myModal').on('hide.bs.modal', function (e) {
@@ -55,13 +55,13 @@
 
 
   // Ecoproyectores animation
-  function switchBg(object, id, duration) {
+ var switchBg = function (object, id, duration) {
       $(object).css("background-image","url('../images/projectors/casio-" + id + ".png')");
       $(object).fadeIn(duration);
       $(object).attr("data-videoid", id);
   }
 
-  function nextBg(object, duration, top) {
+ var nextBg = function (object, duration, top) {
       var id = $(object).attr("data-videoid");
       id = parseInt(id) + 1;
       if (id > top) id = 1;

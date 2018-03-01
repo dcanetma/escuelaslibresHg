@@ -50,12 +50,14 @@
 
 }
 
+
 .modal-dialog {
   max-width: 800px;
   margin: 3rem auto;
 }
 
 .modal-body {
+	background: $gray-800;
   position:relative;
   padding:0px;
 }
