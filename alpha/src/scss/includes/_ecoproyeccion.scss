@@ -4,7 +4,7 @@
   background-position: center;
   background-size:cover;
   position: relative;
-  &::before {
+  .ecoproyeccion-bg {
 		position: absolute;
 		content: "";
 		padding: 0;
@@ -13,11 +13,17 @@
 	  z-index: 1;
 	  left: 0;
 	  top:0;
+	  display: none !important;
 	  @include media-breakpoint-up(lg) {
-			background: url('../images/imatge-test.jpg');
+	  	display: block !important;
+			background-image: url('../images/projectors/casio-5.png');
 		  background-repeat: no-repeat;
 		  background-position: 50% 45%;
 		  background-size: 50%; 
+	    -webkit-transition: background 300ms ease-in 200ms; /* property duration timing-function delay */
+	    -moz-transition: background 300ms ease-in 200ms;
+	    -o-transition: background 300ms ease-in 200ms;
+	    transition: background 300ms ease-in 200ms;
 	  }
 
   }

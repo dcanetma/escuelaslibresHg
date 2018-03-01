@@ -37,11 +37,10 @@
   // Gets the video src from the data-src on each button
   var $videoSrc;  
   $('a.video').click(function(event) {
-      // event.preventDefault();
-      // event.stopPropagation(); 
+      event.preventDefault();
+      event.stopPropagation(); 
       $videoSrc = $(this).data( "src" );
   });
-  console.log($videoSrc);
         
   // when the modal is opened autoplay it  
   $('#myModal').on('shown.bs.modal', function (e) {
@@ -53,5 +52,32 @@
       // a poor man's stop video
       $("#video").attr('src',$videoSrc); 
   }); 
+
+
+  // Ecoproyectores animation
+  function switchBg(object, id, duration) {
+      $(object).css("background-image","url('../images/projectors/casio-" + id + ".png')");
+      $(object).fadeIn(duration);
+      $(object).attr("data-videoid", id);
+  }
+
+  function nextBg(object, duration, top) {
+      var id = $(object).attr("data-videoid");
+      id = parseInt(id) + 1;
+      if (id > top) id = 1;
+      $(object).css("background-image","url('../images/projectors/casio-" + id + ".png')");
+      $(object).fadeIn(duration);
+      $(object).attr("data-videoid", id);
+  }
+
+  setInterval(function() {
+    // method to be executed;
+    $(".ecoproyeccion-bg").fadeOut(1000,
+      function() {
+       // switchBg(this, 2, 1500);
+       nextBg(this, 1000, 5);
+      }  
+    );
+  }, 5000);
 
 })();
