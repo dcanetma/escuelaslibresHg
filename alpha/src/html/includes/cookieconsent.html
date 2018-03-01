@@ -1,0 +1,25 @@
+	<link rel="stylesheet" type="text/css" href="{{ root }}/js/vendor/cookieconsent.min.css" />
+	<script src="{{ root }}/js/vendor/cookieconsent.min.js"></script>
+	<script>
+		window.addEventListener("load", function(){
+		window.cookieconsent.initialise({
+		  "palette": {
+		    "popup": {
+		      "background": "#efefef",
+		      "text": "#404040"
+		    },
+		    "button": {
+		      "background": "#8ec760",
+		      "text": "#ffffff"
+		    }
+		  },
+		  "theme": "classic",
+		  "position": "bottom-right",
+		  "content": {
+		    "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso.",
+		    "dismiss": "De acuerdo",
+		    "link": "Saber más",
+		    "href": "http://www.escuelaslibresdemercurio.com/privacidad"
+		  }
+		})});
+	</script>
