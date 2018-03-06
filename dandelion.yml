@@ -23,5 +23,7 @@ exclude:
     - alpha/gulpfile.js
     - gulpfile.js
     - scss
+    - css
+    - html
 
 revision_file: .revision
