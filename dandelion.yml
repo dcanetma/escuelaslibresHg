@@ -22,5 +22,6 @@ exclude:
     - npm-debug.log
     - alpha/gulpfile.js
     - gulpfile.js
+    - scss
 
 revision_file: .revision
