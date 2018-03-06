@@ -54,19 +54,19 @@
   }); 
 
   // Ecoproyectores animation
- var switchBg = function (object, id, duration) {
+  var switchBg = function (object, id, duration) {
       $(object).css("background-image","url('../images/projectors/casio-" + id + ".png')");
       $(object).fadeIn(duration);
       $(object).attr("data-videoid", id);
   }
 
- var nextBg = function (object, duration, top) {
+  var nextBg = function (object, duration, top) {
       var id = $(object).attr("data-videoid");
       id = parseInt(id) + 1;
       if (id > top) id = 1;
       $(object).css("background-image","url('../images/projectors/casio-" + id + ".png')");
-      $(object).fadeIn(duration);
       $(object).attr("data-videoid", id);
+      $(object).fadeIn(duration);
   }
 
   setInterval(function() {
