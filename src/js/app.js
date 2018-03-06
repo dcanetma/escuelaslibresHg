@@ -78,7 +78,6 @@
       $("#video").attr('src',$videoSrc); 
   }); 
 
-
   // Ecoproyectores animation
  var switchBg = function (object, id, duration) {
       $(object).css("background-image","url('../images/projectors/casio-" + id + ".png')");
@@ -106,3 +105,7 @@
   }, 5000);
 
 })();
+
+// Start wow
+new WOW().init();
+
