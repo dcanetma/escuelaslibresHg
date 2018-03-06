@@ -36,7 +36,7 @@ gulp.task('serve', ['sass'], function() {
 
     // sass + minifycss
     gulp.watch(['src/scss/**/*.scss'], ['sass']);
-    gulp.watch('src/css/*.css', ['minify-css', browserSync.reload]);
+    gulp.watch('src/css/*.css', ['minify-css']);
 
     // Concat js files
     gulp.watch('src/js/*.js', ['js', browserSync.reload]);
