@@ -6,7 +6,7 @@ username: "escuex"
 password: "bUCtK00j2FD5usXb"
 # path: "public_html"
 path: "public_html"
-local_path: "alpha/src"
+local_path: "src"
 
 exclude:
     - .DS_Store
@@ -17,11 +17,6 @@ exclude:
     - README.md
     - sandbox
     - backup
-    - alpha/.DS_Store
-    - alpha/bower_components
-    - alpha/node_modules
-    - alpha/npm-debug.log
-    - alpha/.sass-cache
     - bower_components
     - node_modules
     - npm-debug.log
